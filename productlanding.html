@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>productlanding</title>
+    <style>
+        body{
+  background:linear-gradient( #C0C0C0, #ffb499);
+  margin: 0px;
+  font-family: "Open Sans", sans-serif;
+}
+#image{
+  display: flex;
+  flex: 1;
+}
+#image > div{
+  background-color: hsl(0,0%,80%);
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: flex-start;
+}
+#image > div >img{
+   max-height: 100px;
+   max-width: 100px;
+}
+#container{
+  display: flex;
+  flex-flow: column wrap;
+}
+#main-body{
+  width: 100%;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+a{
+  font-family: "Open Sans", sans-serif;
+  color: #FFF;
+  text-decoration: none;
+}
+a:hover{
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+#header{
+  width: 100%;
+  position: fixed;
+  background-color: hsl(240, 1%, 20%);
+  color: #FFF;
+  
+  display: flex;  
+  flex-wrap: wrap;
+}
+#header > div{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#header > div > nav{
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+#feature-container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.features{
+  margin: 0px 20px 50px 20px;
+  width: 300px;
+  margin-bottom: 100px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+  text-align: center;
+}
+.features > p{
+  width: 100%;
+}
+.features > h3{
+  width: 100%;
+  border-bottom: 2px solid green;
+  background-color: hsl(0, 0%, 90%);
+}
+#video-wrapper{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+#button-container{
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+#submit{
+  background-color: blue;
+  border: 1px solid;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+
+}
+button{
+  background-color: orange;
+  border: 1px solid orange;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+}
+button:hover{
+  animation-name: color-change-orange;
+  animation-duration: 1s;
+  animation-fill-mode: forwards; 
+}
+#info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+#video-wrapper > div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#models{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.model-class{
+  width: 300px;
+  min-width: 100px;
+  background-color: ;
+  margin: 0px 20px 0px 20px;
+  border: 1px solid black;
+  
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex: 1;
+}
+.model-name{
+  width: 100%;
+  background-color: hsl(0,0%,80%);
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: center;
+}
+.model-description{
+  display: flex;
+  line-height: 40px;
+  justify-content: center;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <body>
+        <div id="container">
+          
+          <header id="header">
+            <div id="image">
+              <div id="title">
+                <img id="header-img" alt="product logo thing" src="https://cdn4.iconfinder.com/data/icons/sheep/500/Animal_lamb_sheep_wool_lamb_1-512.png">
+                <h1 style="color: black">Just <span style="color:black">MUTIFY</span></h1>
+              </div>
+            </div>
+            <div>
+              <nav id="nav-bar">
+                <a class="nav-link" href="#features">FEATURES</a>
+                <a class="nav-link" href="#video">DEMO</a>
+                <a class="nav-link" href="#form">PLANS</a>
+              </nav>
+            </div>
+          </header>
+          
+          <div id="main-body">
+           
+            <div>
+              <h2>PRODUCT</h1>
+            </div>
+            <div id="feature-container">
+              <div class="features">
+                <h3>USE</h3>
+                <p>Listen to top quality music all the time<br> </p>
+              </div>
+              <div class="features">
+                <h3>Benefits</h3>
+                <p>Share your musics with your long distance friends and family</p>
+              </div>
+              <div class="features">
+                <h3 id="video-anchor">key features</h3>
+                <p>All types of playlists available based on your taste</p>
+              </div>
+            </div>
+    
+            <div id="video-wrapper">
+              <div>
+                <p>Taylor swift>>></p>
+              </div>
+              <iframe id="video" width="560" height="315" src="https://youtu.be/tollGa3S0o8"></iframe>
+            </div>
+    
+            <div id="models">
+              <div class="model-class">
+                <div class="model-name">
+                  <h2>Silver plan</h2>
+                </div>
+                <div class="model-description">
+                  <p>high quality group sessions<br>
+                  All songs available<br>
+                  Listen to your favourite playlist anytime</p>
+                  
+                </div>
+                <button type="submit" style="width:100%">$100/</button>
+              </div>
+              <div class="model-class">
+                <div class="model-name">
+                  <h2>Gold plan</h2>
+                </div>
+                <div class="plan-description">
+                  <p>Part/pop playlist<br>
+                  download music<br>
+                 users will be provided with best sound quality</p>
+                </div>
+                <button type="submit" style="width:100%">$200/</button>
+              </div>
+              <div class="model-class">
+                <div class="model-name">
+                  <h2>Diamond plan</h2>
+                </div>
+                <div class="plan-description">
+                  <p>Download all the music and listen offline anytime<br>
+                  make playlist with your long distance friends<br>
+                  enjoy all the benefits </p>
+                </div>
+                <button type="submit" style="width:100%">$300/</button>
+                
+              </div>
+            </div>
+    
+            <div id="info">
+              <h3>1-Week Free Trial</h3>
+              <form id="form" action="" method="get">
+                <label for="email" id="email-label">
+                    
+                <input id="email" name="email" type="email" placeholder="Enter your email"></input></label>
+                <div id="button-container">
+                  <input type="submit" id="submit" value="Start Now!"></input>
+                </div>
+              </form>
+            </div>
+          </div>
+    
+    
+      </body>
+    </html>
+    
+    
+</body>
+</html>
